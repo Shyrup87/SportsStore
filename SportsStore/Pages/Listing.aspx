@@ -17,7 +17,7 @@
                string path = RouteTable.Routes.GetVirtualPath(null, null,
                    new RouteValueDictionary() { { "page", i } }).VirtualPath;
                Response.Write(string.Format("<a href='{0}' {1}>{2}</a>",
-                  i, i == CurrentPage ? "class='selected'" : "", i));
+                  path, i == CurrentPage ? "class='selected'" : "", i));
           } %>
     </div>
 </asp:Content>
